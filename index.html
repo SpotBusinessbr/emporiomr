@@ -3016,9 +3016,9 @@
                 
                 const parallelPromises = [
                     // CSVs obrigatórios
-                    loadCSVData(CATEGORIES_CSV_URL).then(data => ({ type: 'categories', data })),
-                    loadCSVData(MENU_CSV_URL).then(data => ({ type: 'menu', data })),
-                    loadCSVData(HOURS_CSV_URL).then(data => ({ type: 'hours', data })),
+                    loadCSVData(CATEGORIES_CSV_URL).then(data => ({ type: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTPVaO4er3ZWcP_irXD3ZO5HEiacEH05Bat05RcloWpzw0w_x__7kdT0-tdFcWiSTuWq9ww9UIsTbak/pubhtml?gid=1553975991&single=true', data })),
+                    loadCSVData(MENU_CSV_URL).then(data => ({ type: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTPVaO4er3ZWcP_irXD3ZO5HEiacEH05Bat05RcloWpzw0w_x__7kdT0-tdFcWiSTuWq9ww9UIsTbak/pubhtml?gid=0&single=true', data })),
+                    loadCSVData(HOURS_CSV_URL).then(data => ({ type: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTPVaO4er3ZWcP_irXD3ZO5HEiacEH05Bat05RcloWpzw0w_x__7kdT0-tdFcWiSTuWq9ww9UIsTbak/pubhtml?gid=102783045&single=true', data })),
                     
                     // CSVs opcionais com tratamento de erro
                     loadCSVData(NEIGHBORHOODS_CSV_URL)
